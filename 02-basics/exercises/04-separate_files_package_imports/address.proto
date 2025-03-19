@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+import "city.proto";
+import "street.proto";
+import "building.proto";
+
+message Address {
+    rapha.City city = 1;
+    rapha.Street street = 2;
+    rapha.Building building = 3;
+}
